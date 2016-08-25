@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 """
-@file: __init__.py.py
+@file: __init__.py
 @time: 2016/8/25 23:33
 @author: chenfan
 """
