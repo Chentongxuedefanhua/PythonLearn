@@ -12,4 +12,5 @@ a = "just test"
 json.dump(a,open('test.json','w'))
 
 b = json.load(open('test.json','r'))
-print b
+
+

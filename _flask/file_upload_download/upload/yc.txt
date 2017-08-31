@@ -1,0 +1,73 @@
+192.168.3.46
+192.168.3.54
+192.168.3.55 cllector
+192.168.4.169
+
+192.168.4.140 web
+
+192.168.32.44 nginx
+
+192.168.4.133
+192.168.4.134
+192.168.4.135
+192.168.4.136 java
+
+									
+192.168.4.137
+192.168.4.138
+192.168.4.139 cam
+192.168.4.146 jmeter
+
+SELECT COUNT(1) as cot,app_name FROM `camille_alarm_event_metadata` where add_time >= '2017-08-04 17:00:00' and add_time <'2017-08-05 17:00:00' GROUP BY app_name order BY cot desc
+
+
+
+
+172.26.5.21 	apm-devtest-ambari.person.100724.zbj
+172.26.5.20 	apm-devtest-kylin.person.100723.zbj
+172.26.5.19 	apm-devtest-kylin.person.100722.zbj
+172.26.5.17 	apm-devtest-dn.person.100721.zbj
+172.26.5.16 	apm-devtest-dn.person.100719.zbj
+172.26.5.18 	apm-devtest-dn.person.100720.zbj
+172.26.5.15 	apm-devtest-nn.person.100717.zbj
+172.26.4.162 	apm-devtest-nn.person.100718.zbj
+172.26.5.14	apm-devtest-zk.person.100715.zbj
+172.26.5.13 	apm-devtest-zk.person.100716.zbj
+172.26.4.251 	apm-devtest-zk.person.100714.zbj
+
+
+
+
+java-monitor-camille-collector 
+172.18.29.63:7000/zbjcheck
+172.18.29.64
+172.18.29.65
+
+java-monitor-camille-checker 
+172.18.27.148:7000/zbjcheck
+172.18.27.149
+172.18.27.150
+
+java-monitor-camille-agent 
+172.18.27.146:9000/zbjcheck
+172.18.27.147
+
+
+hbase+apm-collector                 10.50.64.4
+heapster+influxdb.                  10.50.130.26(root)
+grafana+apm-web                     10.50.1.249
+
+apm-web:2*2G    10.51.2.226
+apm-collector:  
+hbase:  4C*8G    10.51.3.162
+zk+kafka: 2C*4G  10.51.66.13    
+camille-checker: 2*4G   10.51.3.32
+camille-agent:  2*2G    10.51.3.140
+camille-collector: 2*2G  10.51.3.223
+influxdb 2*2G 10.51.66.240
+heapster+grafana 2*2G 10.51.130.38
+
+
+
+
+
